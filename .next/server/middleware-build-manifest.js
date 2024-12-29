@@ -25,11 +25,6 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/blog/[id]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/blog/[id].js"
-    ],
     "/page-login": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
