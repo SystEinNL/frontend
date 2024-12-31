@@ -166,12 +166,6 @@ const Menu = ({ addClass }) => {
                             <li>
                                 <Link href="/category">Healthy </Link>
                             </li>
-                            <li>
-                                <Link href="/category">Lifestyle</Link>
-                            </li>
-                            <li>
-                                <Link href="/category">Blog</Link>
-                            </li>
                         </ul>
 
                         <div className={size < 991 ? "d-block d-lg-none" : "d-none"}>
