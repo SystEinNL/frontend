@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useRouter } from 'next/router';
 
 import dynamic from 'next/dynamic';
+import ComingSoon from './comingSoon';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import "slick-carousel/slick/slick.css";
@@ -12,6 +13,12 @@ import "../public/assets/css/responsive.css";
 import 'metismenujs/dist/metismenujs.css';
 
 function MyApp({ Component, pageProps }) {
+
+    if (process.env.NEXT_PUBLIC_COMING_SOON === 'true') {
+        // If coming soon is true, show the coming soon page
+        return <ComingSoon />;
+    }
+
     const router = useRouter();
 
     useEffect(() => {
@@ -34,7 +41,7 @@ function MyApp({ Component, pageProps }) {
         }
 
         // Clean up on route change
-        const handleRouteChangeError = () => {};
+        const handleRouteChangeError = () => { };
         router.events.on('routeChangeError', handleRouteChangeError);
         return () => {
             router.events.off('routeChangeError', handleRouteChangeError);
