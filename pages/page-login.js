@@ -36,8 +36,11 @@ function Login() {
         // Store the JWT token (here we just log it, but you should store it in localStorage or cookie)
         localStorage.setItem("token", data.token);
         
+        // Get the redirect URL from the query string or default to "/"
+        const redirectUrl = router.query.redirect || "/"; 
+        
         // Redirect the user after successful login
-        router.push("/dashboard"); // Redirect to the dashboard or home page
+        router.push(redirectUrl);
       } else {
         setError(data.message); // Display error message
       }
