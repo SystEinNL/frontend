@@ -6,6 +6,10 @@ import jwt from 'jsonwebtoken';
 const MONGODB_USERS_COLLECTION = process.env.MONGODB_USERS_COLLECTION; // Collection name
 const JWT_SECRET = process.env.JWT_SECRET; // Your secret key for JWT generation
 
+if (!JWT_SECRET) {
+  throw new Error('JWT_SECRET is not defined');
+}
+
 async function handler(req, res) {
   if (req.method === 'POST') {
     const { email, password } = req.body;
@@ -21,7 +25,6 @@ async function handler(req, res) {
 
       // Find user by email
       const user = await db.collection(MONGODB_USERS_COLLECTION).findOne({ email: email });
-      client.close();
 
       // If user doesn't exist, return an error
       if (!user) {
@@ -42,13 +45,18 @@ async function handler(req, res) {
         { expiresIn: '1h' }  // Expiry time for the token
       );
 
-      // Send token as a response (you can also store this in a cookie for better security)
-      res.status(200).json({ token });
+      // Set token in an HTTP-only cookie
+      res.setHeader('Set-Cookie', `token=${token}; HttpOnly; Secure; SameSite=Strict; Path=/; Max-Age=3600`);
+
+      // Send response
+      return res.status(200).json({ message: 'Login successful' });
+
     } catch (error) {
-      res.status(500).json({ message: "Internal server error" });
+      console.error(error);
+      return res.status(500).json({ message: "Internal server error" });
     }
   } else {
-    res.status(405).json({ message: "Method not allowed" });
+    return res.status(405).json({ message: "Method not allowed" });
   }
 }
 
