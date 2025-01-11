@@ -1,12 +1,11 @@
 // ------------------------------------------------
-// Project Name: Finley Template
-// Project Description: Finley - Stylish HTML Template for Creative Projects
-// Tags: mix_design, coming soon, under construction, template, landing page, portfolio, one page, responsive, html5, css3, creative, clean, agency, personal page
-// Version: 1.0.1
+// Project Name: SystEin Coming Soon Template
+// Project Description: SystEin - Systems Engineering Students @ Eindhoven
+// Tags: SystEin, Systems Engineering, Eindhoven University of Technology, TU/e, student association
+// Version: 1.0.2
 // Build Date: May 2023
-// Last Update: January 2024
-// This product is available exclusively on Themeforest
-// Author: mix_design
+// Last Update: January 2025
+// Author: mix_design & SystEin Dev Team
 // Author URI: https://themeforest.net/user/mix_design
 // File name: custom.js
 // ------------------------------------------------
@@ -60,7 +59,7 @@ $(function() {
   // --------------------------------------------- //
   // KBW-Countdown Start
   // --------------------------------------------- //
-  $('#countdown').countdown({until: $.countdown.UTCDate(+10, 2024, 5, 28), format: 'D'});
+  $('#countdown').countdown({until: $.countdown.UTCDate(+1, 2025, 1, 15), format: 'D'});
   // --------------------------------------------- //
   // KBW-Countdown End
   // --------------------------------------------- //
@@ -76,7 +75,7 @@ $(function() {
       transition: 'fade2',
       transitionDuration: 2000,
       slides: [
-        { src: "https://dummyimage.com/960x1080/4d4d4d/636363" },
+        { src: "img/backgrounds/eindhoven_skyline.jpg" },
         { src: "https://dummyimage.com/960x1080/4d4d4d/636363" },
         { src: "https://dummyimage.com/960x1080/4d4d4d/636363" }
       ],
