@@ -1,15 +1,28 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 const ComingSoon = () => {
-    const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        // This will redirect to the static /comingSoon/index.html page
-        router.push('/comingSoon/index.html');
-    }, [router]);
+  useEffect(() => {
+    // Wait for the component to load before showing the iframe
+    setIsLoading(false);
+  }, []);
 
-    return null;
+  return (
+    <div style={{ height: '100vh', margin: 0 }}>
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <iframe
+          src="/comingSoon/index.html"
+          width="100%"
+          height="100%"
+          style={{ border: 'none', display: 'block' }}
+          title="Coming Soon"
+        />
+      )}
+    </div>
+  );
 };
 
 export default ComingSoon;
