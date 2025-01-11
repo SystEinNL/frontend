@@ -75,9 +75,9 @@ $(function() {
       transition: 'fade2',
       transitionDuration: 2000,
       slides: [
-        { src: "img/backgrounds/eindhoven_skyline.jpg" },
-        { src: "https://dummyimage.com/960x1080/4d4d4d/636363" },
-        { src: "https://dummyimage.com/960x1080/4d4d4d/636363" }
+        { src: "img/backgrounds/eindhoven_skyline.png" },
+        { src: "img/backgrounds/eindhoven_university.png" },
+        { src: "img/backgrounds/fontys_university.png" }
       ],
       animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ]
     });
