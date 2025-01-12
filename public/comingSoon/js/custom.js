@@ -59,7 +59,7 @@ $(function() {
   // --------------------------------------------- //
   // KBW-Countdown Start
   // --------------------------------------------- //
-  $('#countdown').countdown({until: $.countdown.UTCDate(+1, 2025, 1, 15), format: 'D'});
+  $('#countdown').countdown({until: $.countdown.UTCDate(+1, 2025, 2, 1), format: 'D'});
   // --------------------------------------------- //
   // KBW-Countdown End
   // --------------------------------------------- //
