@@ -56,11 +56,12 @@ TABLE CONTENT
   --color-info: #4da7d4;
   --color-light: #f8f9f9;
   --color-grey: #f7f8f9;
-  --color-dark: #000c2d;
-  --color-muted: #687385;
+  --color-black: #000000;
+  --color-dark: #1a1a1a;
+  --color-muted: #eaecee;
   --color-white: #ffffff;
   --primary-border-color: #9b9b9b;
-  --secondary-border-color: #f0f8ff;
+  --secondary-border-color: #323232;
   --mutted-border-color: #eaecee;
   --box-shadow-normal: 0 10px 10px rgba(0, 0, 0, 0.08);
   --box-shadow-hover: 0 4px 60px 0 rgba(0, 0, 0, 0.2);
@@ -122,10 +123,10 @@ TABLE CONTENT
   background-color: var(--color-light) !important;
 }
 .bg-grey {
-  background-color: var(--color-grey) !important;
+  background-color: var(--color-dark) !important;
 }
 .bg-dark {
-  background-color: var(--color-dark) !important;
+  background-color: var(--color-black) !important;
 }
 .bg-white {
   background-color: var(--color-white) !important;
@@ -156,7 +157,7 @@ TABLE CONTENT
 }
 .form-control:focus {
   outline: none;
-  border-color: var(--mutted-border-color);
+  border-color: var(--color-black);
 }
 a.bg-primary:focus,
 a.bg-primary:hover,
@@ -180,6 +181,8 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
+  background-color: var(--color-dark);
+  color: var(--color-grey);
 }
 h1,
 h2,
@@ -394,7 +397,7 @@ sup {
   -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.05);
-  background: #fff;
+  background: var(--color-dark);
 }
 .sticky-bar .divider-2 {
   display: none;
@@ -656,6 +659,7 @@ button.search-icon {
   padding: 30px;
   display: table;
   height: 100%;
+  background-color: var(--color-dark);
 }
 .dark-mark {
   opacity: 0;
@@ -688,6 +692,12 @@ button.search-icon {
 }
 
 /*Search form*/
+
+.btn.btn-search {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
 body.open-search-form {
   overflow: hidden;
 }
@@ -710,7 +720,7 @@ header .search-icon .ti-close,
   transform: scaleY(1);
   transform-origin: top;
   position: absolute;
-  background: #fff;
+  background: var(--color-dark);
   z-index: 2;
 }
 .search-text-bg {
@@ -724,7 +734,7 @@ header .search-icon .ti-close,
 .search-header {
   border-bottom-width: 3px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-muted);
+  border-bottom-color: var(--color-primary);
   font-style: italic;
 }
 .search-header .form-control {
@@ -1014,6 +1024,12 @@ header .search-icon .ti-close,
 }
 
 /*Footer layouts*/
+
+.footer-img {
+  max-width: 150px !important;
+  margin-bottom: 20px;
+}
+
 .footer-area {
   color: #666;
 }
@@ -1408,11 +1424,12 @@ blockquote ol:last-child {
   margin-bottom: 40px;
   text-align: left;
   display: flex;
-  border-bottom: 1px solid rgb(225, 225, 225);
+  border: 1px solid rgb(225, 225, 225);
   padding-bottom: 40px;
 }
 .author-bio .author-image img {
   border-radius: 50%;
+  border: 2px solid var(--color-primary);
   width: 90px;
   height: 90px;
 }
@@ -1445,8 +1462,16 @@ blockquote ol:last-child {
   text-transform: uppercase;
   margin-bottom: 0;
   font-weight: 500;
-  color: var(--color-black);
+  color: var(--color-dark);
 }
+
+.author-traits {
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  padding: 2px 10px;
+  border-radius: 11px;
+}
+
 .author-bio .author-description {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -1565,13 +1590,13 @@ blockquote ol:last-child {
   padding-left: 0px;
 }
 .form-control {
-  border: 1px solid rgb(225, 225, 225);
+  border: 1px solid var(--color-primary);
   border-radius: 30px;
   height: 48px;
   padding-left: 18px;
   font-size: 14px;
   background: transparent;
-  background: #fff;
+  background: var(--color-dark);
 }
 textarea.form-control {
   border-radius: 10px;
@@ -1579,6 +1604,8 @@ textarea.form-control {
 .form-control:focus {
   outline: 0;
   box-shadow: none;
+  background-color: var(--color-dark);
+  color: var(--color-grey);
 }
 .form-control::placeholder {
   font-weight: 300;
@@ -1602,7 +1629,7 @@ textarea.form-control {
   padding-top: 18px;
   border-radius: 10px;
   height: 100% !important;
-  background: #fff;
+  background: var(--color-dark);
 }
 .comment-form::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */

@@ -38,6 +38,10 @@
     border: 0;
 }
 
+.sidebar-widget {
+    background-color: var(--color-dark);
+}
+
 /*Tagcloud*/
 .widget_tagcloud .tag-cloud-link {
     text-transform: capitalize;
@@ -49,7 +53,7 @@
     border-radius: 30px;
     margin: 0 5px 10px 0;
     border: 1px solid #ebebeb;
-    background: #f2f3f5;
+    background: #323233;
 }
 
 /*Widget about*/
@@ -111,8 +115,8 @@
     left: 3px;
     opacity: 0;
     height: 6px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+    border-left: 2px solid var(--color-white);
+    border-bottom: 2px solid var(--color-white);
     -moz-transform: translateY(-65%) rotate(-45deg);
     -webkit-transform: translateY(-65%) rotate(-45deg);
     transform: translateY(-65%) rotate(-45deg);
@@ -144,7 +148,7 @@
     transform: translateY(-50%);
 }
 .divider-text-center span {
-    background-color: #fff;
+    background-color: var(--color-dark);
     padding: 0 15px;
     position: relative;
     text-transform: uppercase;
@@ -156,7 +160,7 @@
 .btn-login li a {
     border-radius: 5px;
     padding: 15px 25px;
-    color: #fff;
+    color: var(--color-white);
     display: block;
     line-height: 1;
     text-transform: none;
@@ -274,7 +278,7 @@ button.box-shadow {
     transform: rotate(21deg);
 }
 figure .post-format {
-    background: #fff;
+    background: var(--color-white);
     display: block;
     width: 25px;
     height: 25px;
@@ -332,7 +336,7 @@ span.has-dot::before {
 /*featured-slider-1*/
 .featured-1 {
     padding: 80px 0;
-    background: #f1f2f3;
+    background: var(--color-black);
 }
 .featured-1 h3 {
     font-size: 42px;
@@ -381,7 +385,7 @@ span.has-dot::before {
     z-index: 300;
 }
 .featured-slider-2 .arrow-cover i {
-    color: #fff;
+    color: var(--color-white);
 }
 
 /*featured-slider-3*/
@@ -462,7 +466,7 @@ span.has-dot::before {
     .post-content-overlay
     .entry-meta.text-white
     span.post-cat::after {
-    background: #fff;
+    background: var(--color-white);
 }
 .slick-dots {
     display: -webkit-box;
@@ -500,7 +504,7 @@ span.has-dot::before {
     line-height: 30px;
     font-size: 12px;
     z-index: 3;
-    color: #fff;
+    color: var(--color-white);
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
@@ -545,7 +549,7 @@ span.has-dot::before {
     z-index: 12;
     transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
     position: relative;
-    background: #fff;
+    background: var(--color-white);
 }
 .post-card-1::before {
     content: "";
@@ -564,8 +568,7 @@ span.has-dot::before {
     border-radius: 10px 10px 0 0;
 }
 .post-card-1 .post-content {
-    background: #fff;
-    border-radius: 0 0 10px 10px;
+    background: var(--color-dark);
 }
 .post-card-content {
     display: flex;
@@ -709,7 +712,7 @@ figure .social-share li a,
     text-align: center;
     border-radius: 50%;
     font-size: 11px;
-    color: #fff;
+    color: var(--color-white);
 }
 figure .social-share:hover li:nth-child(1),
 .post-thumb .social-share:hover li:nth-child(1) {
@@ -755,7 +758,7 @@ figure .social-share:hover li:last-child,
 
 /*More articles*/
 .single-more-articles {
-    background: #fff none repeat scroll 0 0;
+    background: var(--color-white) none repeat scroll 0 0;
     border: 1px solid rgb(225, 225, 225);
     bottom: 84px;
     display: inline-block;
@@ -792,8 +795,8 @@ button.single-more-articles-close {
     margin-bottom: 0;
     float: left;
     margin-right: 15px;
-    color: #fff;
-    background: #000;
+    color: var(--color-white);
+    background: var(--color-dark);
     padding: 2px 10px;
     border-radius: 2px;
 }
@@ -866,11 +869,11 @@ button.single-more-articles-close {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: var(--color-muted);
+    background: var(--color-primary);
     border-radius: 50%;
     line-height: 24px;
     text-align: center;
-    color: #fff;
+    color: var(--color-white);
     font-size: 12px;
 }
 .widget_categories li:hover span.post-count {
@@ -884,7 +887,7 @@ button.single-more-articles-close {
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #000;
+    color: var(--color-dark);
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link,
@@ -896,7 +899,7 @@ button.single-more-articles-close {
 }
 .nav-tabs .nav-link.active {
     border-width: 0 0 2px 0;
-    border-color: #000;
+    border-color: var(--color-dark);
     border-style: solid;
 }
 nav.tab-nav .nav-tabs {
@@ -2001,7 +2004,7 @@ nav.tab-nav .nav-tabs {
 .mobilemenu {
 	display: none;
 	width: 100%;
-	background: #fff;
+	background: var(--color-black);
 	width: 100%;
 	padding: 30px;
 	margin-top: 20px;

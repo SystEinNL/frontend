@@ -61,6 +61,8 @@
     .featured-slider-2-items .post-thumb .thumb-overlay{min-height:450px;}
     .featured-slider-2 .post-content-overlay .post-title{max-width:100%;}
     .featured-slider-2-nav{display:none}
+    .footer-img{display:none}
+    .author-bio{display: block;}
 }
 @media (min-width:480px) and (max-width:767px){
     .loop-list-style-1 .post-thumb{margin-bottom:15px;}

@@ -55,8 +55,8 @@ function Login() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-6 col-md-10">
-              <div className="login_wrap widget-taber-content p-30 bg-white border-radius-10">
-                <div className="padding_eight_all bg-white">
+              <div className="login_wrap widget-taber-content p-30 bg-dark border-radius-10">
+                <div className="padding_eight_all bg-dark">
                   <div className="heading_s1 text-center">
                     <h3 className="mb-30 font-weight-900">Login</h3>
                   </div>

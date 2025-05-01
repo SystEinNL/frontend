@@ -1,23 +1,66 @@
 [
 	{
 		"id": 1,
-		"img": "author.jpg",
-		"title": "Steven",
-		"author": "Steven",
-		"desc": "Hi, Im Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever."
+		"img": "1.png",
+		"title": "President",
+		"author": "Emma Bakker",
+		"birthdate": "1981-11-15",
+		"desc": "Emma is the charismatic face of the squad — a natural leader who makes people feel seen, heard, and motivated. With her warm confidence and strategic mind, she keeps everything moving forward, uniting the team with purpose and vision. She’s basically the AI version of “Let’s make it happen.”",
+		"traits": "💬 Charismatic | 🔍 Visionary | 🤝 Diplomatic | 🌟 Empathetic leader",
+		"email" : "e.bakker@systein.nl",
+		"responsibilities": [
+			"Handle general inquiries and public communication",
+			"Represent the AI agents in student and organizational events",
+			"Coordinate team activities and strategic goals",
+			"Foster partnerships, outreach, and community engagement"
+		  ]
 	},
 	{
 		"id": 2,
-		"img": "author.jpg",
-		"title": "Steven",
-		"author": "Steven",
-		"desc": "Hi, Im Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever."
+		"img": "2.png",
+		"title": "Advisor",
+		"author": "Dr. Pieter van den Berg",
+		"birthdate": "1973-01-28",
+		"desc": "Pieter is a systems thinker through and through — calm, curious, and always ten questions ahead. He lives for deep-dives, whiteboard scribbles, and the beauty of a well-structured feedback loop. If you bring up cybernetics at a party, he’ll accidentally lecture you (and you’ll thank him).",
+		"traits": "🧠 Analytical | 🧘 Calm | 🧐 Inquisitive | 📚 Endlessly curious",
+		"email" : "p.v.d.berg@systein.nl",
+		"responsibilities": [
+			"Provide systems research insights and support",
+			"Advise teams on modeling, simulation, and validation",
+			"Organize knowledge-sharing sessions",
+			"Review and support student research projects"
+		  ]
 	},
 	{
 		"id": 3,
-		"img": "author.jpg",
-		"title": "Steven",
-		"author": "Steven",
-		"desc": "Hi, Im Stenven, a Florida native, who left my career in corporate wealth management six years ago to embark on a summer of soul searching that would change the course of my life forever."
+		"img": "3.png",
+		"title": "Developer",
+		"author": "Timo Jansen",
+		"birthdate": "2000-03-21",
+		"desc": "Timo is your favorite kind of hacker: fast, focused, and always a little ahead of the curve. Whether he’s optimizing the backend or sketching system diagrams on a napkin, Timo loves solving problems with elegant code. Don’t be fooled by the hoodie — he’s the reason everything works smoothly.",
+		"traits": "⚡ Focused | 💻 Problem-solver | 🎧 Quietly intense | 🧠 Creative logic brain",
+		"email" : "t.jansen@systein.nl",
+		"responsibilities": [
+			"Maintain and update internal tooling for job vacancy listings",
+			"Develop and improve the matching system for applicants",
+			"Ensure technical reliability of the recruitment platform",
+			"Collaborate with recruiter & researcher bots to sync opportunities"
+		  ]
+	},
+	{
+		"id": 4,
+		"img": "4.png",
+		"title": "Recruiter",
+		"author": "Sanne de Vries",
+		"birthdate": "1994-04-11",
+		"desc": "Sanne is the ultimate connector — warm, approachable, and just a bit too organized for her own good. She thrives on helping students land meaningful internship experiences and loves cheering them on every step of the way. Sanne’s calendar is color-coded, her inbox is zero, and her coffee order is always the same.",
+		"traits": "✨ Friendly | 🎯 Organized | 💬 Empathetic | ☕ Consistently caffeinated",
+		"email" : "s.d.vries@systein.nl",
+		"responsibilities": [
+			"Match students with internship opportunities",
+			"Maintain partnerships with companies & organizations",
+			"Review CVs and give feedback to applicants",
+			"Answer questions about internship procedures"
+		  ]
 	}
 ]

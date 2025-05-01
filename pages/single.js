@@ -298,7 +298,7 @@ function Single() {
                                 ferret but the.
                             </p>
                             {/* <!--Begin Subcrible--> */}
-                            <div className="border-radius-10 border bg-white mb-30 p-30 wow fadeIn animated">
+                            <div className="border-radius-10 border bg-dark mb-30 p-30 wow fadeIn animated">
                                 <div className="row justify-content-between">
                                     <div className="col-md-5 mb-2 mb-md-0">
                                         <h5 className="font-weight-bold secondfont mb-30 mt-0">
@@ -395,7 +395,7 @@ function Single() {
                             </ul>
                         </div>
                         {/* <!--author box--> */}
-                        <div className="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
+                        <div className="author-bio p-30 mt-50 border-radius-10 bg-dark wow fadeIn animated">
                             <div className="author-image mb-30">
                                 <Link href="/author">
                                     <img

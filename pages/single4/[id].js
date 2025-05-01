@@ -331,7 +331,7 @@ const SingleVendor = () => {
                                                         ferret but the.
                                                     </p>
                                                     {/* <!--Begin Subcrible--> */}
-                                                    <div className="border-radius-10 border bg-white mb-30 p-30 wow fadeIn animated">
+                                                    <div className="border-radius-10 border bg-dark mb-30 p-30 wow fadeIn animated">
                                                         <div className="row justify-content-between">
                                                             <div className="col-md-5 mb-2 mb-md-0">
                                                                 <h5 className="font-weight-bold secondfont mb-30 mt-0">
@@ -430,7 +430,7 @@ const SingleVendor = () => {
                                                     </ul>
                                                 </div>
                                                 {/* <!--author box--> */}
-                                                <div className="author-bio p-30 mt-50 border-radius-10 bg-white wow fadeIn animated">
+                                                <div className="author-bio p-30 mt-50 border-radius-10 bg-dark wow fadeIn animated">
                                                     <div className="author-image mb-30">
                                                         <Link href="/author">
                                                             <img
@@ -812,7 +812,7 @@ const SingleVendor = () => {
                                     </div>
                                     <div className="col-lg-4 primary-sidebar sticky-sidebar">
                                         <div className="widget-area">
-                                            <div className="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-white border-radius-5 has-border  wow fadeInUp animated">
+                                            <div className="sidebar-widget widget-about mb-50 pt-30 pr-30 pb-30 pl-30 bg-dark border-radius-5 has-border  wow fadeInUp animated">
                                                 <img
                                                     className="about-author-img mb-25"
                                                     src="/assets/imgs/authors/author.jpg"
@@ -858,7 +858,7 @@ const SingleVendor = () => {
                                                 <div className="post-block-list post-module-1">
                                                     <ul className="list-post">
                                                         <li className="mb-30 wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-content media-body">
                                                                     <h6 className="post-title mb-15 text-limit-2-row font-medium">
                                                                         <Link href="/single">Spending
@@ -893,7 +893,7 @@ const SingleVendor = () => {
                                                             </div>
                                                         </li>
                                                         <li className="mb-30 wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-content media-body">
                                                                     <h6 className="post-title mb-15 text-limit-2-row font-medium">
                                                                         <Link href="/single">Relationship
@@ -925,7 +925,7 @@ const SingleVendor = () => {
                                                             </div>
                                                         </li>
                                                         <li className="mb-30 wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-content media-body">
                                                                     <h6 className="post-title mb-15 text-limit-2-row font-medium">
                                                                         <Link href="/single">Here’s
@@ -961,7 +961,7 @@ const SingleVendor = () => {
                                                             </div>
                                                         </li>
                                                         <li className=" wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-content media-body">
                                                                     <h6 className="post-title mb-15 text-limit-2-row font-medium">
                                                                         <Link href="/single">America’s
@@ -1009,7 +1009,7 @@ const SingleVendor = () => {
                                                 <div className="post-block-list post-module-2">
                                                     <ul className="list-post">
                                                         <li className="mb-30 wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
                                                                     <Link href="/single" className="color-white">
                                                                         <img
@@ -1042,7 +1042,7 @@ const SingleVendor = () => {
                                                             </div>
                                                         </li>
                                                         <li className="mb-30 wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
                                                                     <Link href="/single" className="color-white">
                                                                         <img
@@ -1074,7 +1074,7 @@ const SingleVendor = () => {
                                                             </div>
                                                         </li>
                                                         <li className="wow fadeInUp animated">
-                                                            <div className="d-flex bg-white has-border p-25 hover-up transition-normal border-radius-5">
+                                                            <div className="d-flex bg-dark has-border p-25 hover-up transition-normal border-radius-5">
                                                                 <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
                                                                     <Link href="/single" className="color-white">
                                                                         <img

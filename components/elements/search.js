@@ -15,11 +15,11 @@ const Search = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Search stories, places and people"
+                                            placeholder="Search research topics, vacancies and more..."
                                         />
                                         <div className="input-group-append">
                                             <button
-                                                className="btn btn-search bg-white"
+                                                className="btn btn-search"
                                                 type="submit"
                                             >
                                                 <i className="elegant-icon icon_search"></i>
@@ -37,13 +37,13 @@ const Search = () => {
                                 </h5>
                                 <ul className="list-inline d-inline-block">
                                     <li className="list-inline-item">
-                                        <Link href="/category">World</Link>
+                                        <Link href="/category">Research</Link>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link href="/category">American</Link>
+                                        <Link href="/category">Puzzle</Link>
                                     </li>
                                     <li className="list-inline-item">
-                                        <Link href="/category">Opinion</Link>
+                                        <Link href="/category">Research</Link>
                                     </li>
                                     <li className="list-inline-item">
                                         <Link href="/category">Tech</Link>
@@ -61,74 +61,6 @@ const Search = () => {
                                         <Link href="/category">Business</Link>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div className="row mt-80">
-                            <div className="col-lg-4">
-                                <div className="d-flex bg-grey has-border p-25 hover-up-2 transition-normal border-radius-5 mb-30">
-                                    <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                        <Link href="/single" className="color-white">
-                                            <img
-                                                src="/assets/imgs/news/thumb-2.jpg"
-                                                alt=""
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content media-body">
-                                        <h6>
-                                            {" "}
-                                            <Link href="/category">Travel Tips</Link>{" "}
-                                        </h6>
-                                        <p className="text-muted font-small">
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6">
-                                <div className="d-flex bg-grey has-border p-25 hover-up-2 transition-normal border-radius-5 mb-30">
-                                    <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                        <Link href="/single" className="color-white">
-                                            <img
-                                                src="/assets/imgs/news/thumb-4.jpg"
-                                                alt=""
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content media-body">
-                                        <h6>
-                                            {" "}
-                                            <Link href="/category">Lifestyle</Link>{" "}
-                                        </h6>
-                                        <p className="text-muted font-small">
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4  col-md-6">
-                                <div className="d-flex bg-grey has-border p-25 hover-up-2 transition-normal border-radius-5 mb-30">
-                                    <div className="post-thumb post-thumb-64 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
-                                        <Link href="/single" className="color-white">
-                                            <img
-                                                src="/assets/imgs/news/thumb-3.jpg"
-                                                alt=""
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="post-content media-body">
-                                        <h6>
-                                            {" "}
-                                            <Link href="/category">Hotel Review</Link>{" "}
-                                        </h6>
-                                        <p className="text-muted font-small">
-                                            Lorem ipsum dolor sit amet, consectetur
-                                            adipiscing elit.
-                                        </p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

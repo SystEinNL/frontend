@@ -4,59 +4,59 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
 const Header = ({ addClass, openSearch }) => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [username, setUsername] = useState(""); // Store the username
-    const router = useRouter();
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [username, setUsername] = useState(""); // Store the username
+    // const router = useRouter();
 
-    // Fetch user information from the server
-    useEffect(() => {
-        const fetchUserInfo = async () => {
-            try {
-                const response = await fetch("/api/userInfo", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    credentials: "include", // Include cookies with the request
-                    body: JSON.stringify({ fields: ["username"] }), // Request only the username
-                });
+    // // Fetch user information from the server
+    // useEffect(() => {
+    //     const fetchUserInfo = async () => {
+    //         try {
+    //             const response = await fetch("/api/userInfo", {
+    //                 method: "POST",
+    //                 headers: {
+    //                     "Content-Type": "application/json",
+    //                 },
+    //                 credentials: "include", // Include cookies with the request
+    //                 body: JSON.stringify({ fields: ["username"] }), // Request only the username
+    //             });
 
-                if (response.ok) {
-                    const data = await response.json();
-                    setIsLoggedIn(true);
-                    setUsername(data.username); // Assume the server returns { username: "user123" }
-                } else {
-                    console.error("Failed to fetch user info");
-                    setIsLoggedIn(false);
-                }
-            } catch (error) {
-                console.error("Error fetching user info:", error);
-                setIsLoggedIn(false);
-            }
-        };
+    //             if (response.ok) {
+    //                 const data = await response.json();
+    //                 setIsLoggedIn(true);
+    //                 setUsername(data.username); // Assume the server returns { username: "user123" }
+    //             } else {
+    //                 console.error("Failed to fetch user info");
+    //                 setIsLoggedIn(false);
+    //             }
+    //         } catch (error) {
+    //             console.error("Error fetching user info:", error);
+    //             setIsLoggedIn(false);
+    //         }
+    //     };
 
-        fetchUserInfo();
-    }, []);
+    //     fetchUserInfo();
+    // }, []);
 
-    const handleSignOut = async () => {
-        try {
-            const response = await fetch("/api/logout", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                credentials: "include",
-            });
+    // const handleSignOut = async () => {
+    //     try {
+    //         const response = await fetch("/api/logout", {
+    //             method: "POST",
+    //             headers: { "Content-Type": "application/json" },
+    //             credentials: "include",
+    //         });
 
-            if (response.ok) {
-                setIsLoggedIn(false);
-                setUsername("");
-                router.push("/");
-            }
-        } catch (error) {
-            console.error("Error during sign-out:", error);
-        }
-    };
+    //         if (response.ok) {
+    //             setIsLoggedIn(false);
+    //             setUsername("");
+    //             router.push("/");
+    //         }
+    //     } catch (error) {
+    //         console.error("Error during sign-out:", error);
+    //     }
+    // };
 
-    const currentUrl = router.asPath;
+    // const currentUrl = router.asPath;
 
     return (
         <>
@@ -73,7 +73,7 @@ const Header = ({ addClass, openSearch }) => {
                                     />
                                 </Link>
                             </div>
-                            <div className="col-md-9 col-xs-6 text-right header-top-right">
+                            {/* <div className="col-md-9 col-xs-6 text-right header-top-right">
                                 <button className="search-icon d-none d-md-inline" onClick={openSearch}>
                                     <span className="mr-15 text-muted font-small">
                                         <i className="elegant-icon icon_search mr-5"></i>
@@ -95,11 +95,11 @@ const Header = ({ addClass, openSearch }) => {
                                 ) : (
                                     <Link href={`/page-login?redirect=${encodeURIComponent(currentUrl)}`}>
                                         <button className="btn btn-radius bg-primary text-white ml-15 font-small box-shadow">
-                                            Login / Sign Up
+                                            Login | Sign Up
                                         </button>
                                     </Link>
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

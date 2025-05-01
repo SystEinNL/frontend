@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>Stories - Personal Blog HTML Template</title>
-                <meta property="og:title" content="My page title" key="title" />
+                <title>SystEin - Systems Science Think Tank</title>
+                <meta property="og:title" content="SystEin, Systems Science Think Tank" key="title" />
                 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
             </Head>
             <Sidebar removeClass={removeClass} />
@@ -35,7 +35,6 @@ const Layout = ({ children }) => {
 
             <Bottom />
             <Footer removeClass={removeClass} />
-            <BackToTop />
         </>
     );
 };

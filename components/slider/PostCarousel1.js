@@ -50,7 +50,7 @@ const PostCarousel1 = () => {
                                             {item.date}
                                         </span>
                                         <span className="hit-count has-dot">
-                                            {item.views} Views
+                                            {item.readTime} MINS READ
                                         </span>
                                     </div>
                                 </div>
