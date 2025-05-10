@@ -24,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 server/.env
 server/
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
