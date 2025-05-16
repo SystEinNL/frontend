@@ -22,8 +22,9 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-server/.env
-server/
+backend/.env
+backend/
+comingSoon/
 
 # amplify
 .amplify
