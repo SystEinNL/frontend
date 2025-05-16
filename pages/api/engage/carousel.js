@@ -6,6 +6,9 @@ export default async function handler(req, res) {
     if (req.method !== "GET") {
         return res.status(405).end(); // Method Not Allowed
     }
+    if (!process.env.MONGO_URI) {
+        throw new Error('⚠️ Please define the MONGO_URI environment variable inside .env.local');
+    }
 
     try {
         const client = await MongoClient.connect(MONGO_URI);
